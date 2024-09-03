@@ -1,0 +1,13 @@
+description "NPZ-NPY file I/O library demo\377";
+
+uses
+	Core,
+	Npy,
+	Functions4U;
+
+file
+	Npy_demo_cl.cpp;
+
+mainconfig
+	"" = "";
+

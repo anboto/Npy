@@ -1,0 +1,10 @@
+description "Npy is library for reading/writing NPY files\377";
+
+uses
+	plugin/zip;
+
+file
+	Npy.cpp,
+	Npy.h,
+	npy.hpp;
+
