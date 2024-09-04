@@ -3,4 +3,4 @@
 
 [libnpy](https://github.com/llohse/libnpy) is a simple C++ library for reading and writing of NumPy's .npy files.
 
-The Npy package is a basic C++ wrapper for Npy/Npz file format. For ease of use, a simple example is included.
+The Npy package is a basic C++ wrapper for .npy/.npz file format. For ease of use, a simple example is included.
