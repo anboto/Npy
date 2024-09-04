@@ -5,7 +5,7 @@
 #include <Eigen/Eigen.h>
 #include <Eigen/MultiDimMatrix.h>
 #include <plugin/zip/zip.h>
-#include "npy.hpp"
+#include <plugin/libnpy/npy.hpp>
 
 namespace Upp {
 	
