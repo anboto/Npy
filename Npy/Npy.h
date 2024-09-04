@@ -135,7 +135,7 @@ public:
   		header.fortran_order = false;
   		
   		header.shape.clear();
-  		for (int i = 0; i < d.dims(); ++i)
+  		for (int i = 0; i < d.GetNumAxis(); ++i)
   			header.shape.push_back(d.size(i));	
 
 		int size = npy::comp_size(header.shape)*header.dtype.itemsize;
