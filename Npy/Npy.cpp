@@ -5,6 +5,8 @@
 
 #include "Npy.h"
 
+#include <Functions4U/EnableWarnings.h>
+
 namespace Upp {
 
 bool Npz::Load(const char *fileName) {
@@ -97,7 +99,7 @@ void Npy::LoadData(const String &dat) {
     	throw std::runtime_error("io error: failed to open a file.");
 	std::string header_s = npy::read_header(iss);
 	header = npy::parse_header(header_s);
-	int size = npy::comp_size(header.shape)*header.dtype.itemsize;
+	int size = (int)(npy::comp_size(header.shape)*header.dtype.itemsize);
 	StringBuffer str(size);
 	iss.read(str.begin(), size);
 	data = str;
