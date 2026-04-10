@@ -124,7 +124,7 @@ String Npy::Type() {
 	case 'f': ret = "float"; 	break;	
 	case 'i': ret = "int"; 		break;	
 	case 'c': ret = "complex"; 	break;
-	default:  ret = Format("unknown(%c)", header.dtype.kind); 	break;
+	default:  ret = F("unknown(%c)", header.dtype.kind); 	break;
 	}
 	ret << header.dtype.itemsize;
 	return ret;
