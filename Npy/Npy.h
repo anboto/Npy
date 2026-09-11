@@ -28,7 +28,7 @@ public:
 	Vector<int> GetSize() {
 		Vector<int> ret;
 		for (auto r : header.shape)
-			ret << r;
+			ret << (int)r;
 		return ret;	
 	}
 	
